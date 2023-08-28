@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+:root{
+  --headerfont: 'Pacifico', cursive;
+  --bodyFont: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--bodyFont);
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--headerfont);
+  text-align: start;
+  padding-left: clamp(1rem, 2vw, 2rem);
+  font-size: calc(25px + 2vmin);
+}
+i{
+  font-size: calc(6px + 2vmin);
+  color: #4ca6bf;
+  margin: 1rem;
+}
+#fm{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: clamp(19rem, 50vw, 50rem);
+  border-radius: .4rem;
+  gap: 1rem;
+  padding: .5rem;
+  margin: auto;
+  /* background: #ffffff1a; */
+}
+
+#sub{
+  height: 2.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  color: #42454c;
+  font-weight: 600;
+  font-size: calc(8px + 2vmin);
+  transition: background .1s ease-in-out, color .1s ease-in-out;
+}
+#sub:hover{
+  color: white;
+  background: rgb(75, 191, 125);
+}
+#in{
+  color: white;
+  height: clamp(2.5rem, 5vw, 4rem);
+  width: 100%;
+  font-family: var(--bodyFont);
+  font-size: calc(13px + 2vmin);
+  padding-left: .5rem;
+  border: none;
+  border-bottom: solid white 2px;
+  background: none;
+}
+#in:focus,
+.edit-in:focus{
+  outline: none;
+}
+.options{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: .5rem;
+  width: 17%;
+}
+.edit-btn{
+  background-color: #ff9800;
+  border: none;
+  border-radius: .2rem;
+  padding: .1rem .4rem;
+  font-size: calc(12px + 2vmin);
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+.del-btn{
+  background-color: #e91e5d;
+  border: none;
+  border-radius: .2rem;
+  padding: .1rem .4rem;
+  font-size: calc(12px + 2vmin);
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  /* margin-right: clamp(0rem, .5vw, 1rem); */
+}
+.clear-btn-ph{
+  font-weight: 600;
+  font-size: calc(8px + 2vmin);
+  margin: 2rem auto auto;
+  height: 2rem;
+}
+.clear-btn{
+  cursor: pointer;
+  border: none;
+  color: #42454c;
+  border-radius: .2rem;
+  height: 2rem;
+  width: clamp(13rem, 27vw, 20rem);
+  margin: 2rem auto auto;
+  font-weight: 600;
+  font-size: calc(8px + 2vmin);
+  transition: background .1s ease-in-out, color .1s ease-in-out;
+}
+.clear-btn:hover{
+  color: white;
+  background: #e91e5d;
+}
+.count{
+  color: #42454c;
+}
+.todo-txt{
+  width: 85%;
+  text-align: start;
+  word-wrap: break-word;
+}
+.todo-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 500;
+  font-size: clamp(2rem,3vw,3rem);
+  width: clamp(20rem, 50vw, 50rem);
+  /* border: solid white 2px; */
+  border-radius: .8rem;
+  padding: .5rem;
+  margin: 2rem auto auto;
+  background-color: rgb(75 166 191);
+}
+
+.edit-main{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #0000009b;
+}
+.edit-fm{
+  position: absolute;
+  backdrop-filter: blur(8px);
+  background-color: #1919196e;
+  width: clamp(20rem, 40vw, 40rem);
+  padding: 0 0 1rem;
+  border-radius: .5rem;
+  gap: 1rem;
+}
+.exit-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #42454c;
+  border-radius: .5rem .5rem 0 0;
+}
+.edit-inp-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.edit-in{
+  color: white;
+  /* height: clamp(2.5rem, 3vw, 3rem); */
+  width: 75%;
+  font-family: var(--bodyFont);
+  font-size: calc(10px + 2vmin);
+  padding-left: .5rem;
+  border: none;
+  border-bottom: solid white 2px;
+  background: none;
+}
+.edit-sub{
+  height: 2.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+  color: #42454c;
+  font-size: calc(8px + 2vmin);
+  transition: background .1s ease-in-out, color .1s ease-in-out;
+}
+.edit-sub:hover{
+  color: white;
+  background: rgb(75, 191, 125);
+}
+.exit-btn{
+  border: none;
+  border-radius: 100%;
+  height: 11px;
+  width: 10px;
+  background-color: #ff3e30;
+  margin: 8px;
+  cursor: pointer;
+}
