@@ -76,20 +76,24 @@ i{
   width: 17%;
 }
 .edit-btn{
+  display: flex;
+  align-items: center;
   background-color: #ff9800;
   border: none;
   border-radius: .2rem;
-  padding: .1rem .4rem;
-  font-size: calc(12px + 2vmin);
+  padding: .1rem .3rem;
+  font-size: calc(10px + 2vmin);
   font-weight: 600;
   color: white;
   cursor: pointer;
 }
 .del-btn{
+  display: flex;
+  align-items: center;
   background-color: #e91e5d;
   border: none;
-  border-radius: .2rem;
-  padding: .1rem .4rem;
+  border-radius: .3rem;
+  padding: .2rem .4rem;
   font-size: calc(12px + 2vmin);
   font-weight: 600;
   color: white;
@@ -136,7 +140,7 @@ i{
   font-size: clamp(2rem,3vw,3rem);
   width: clamp(20rem, 50vw, 50rem);
   /* border: solid white 2px; */
-  border-radius: .8rem;
+  border-radius: .5rem;
   padding: .5rem;
   margin: 2rem auto auto;
   background-color: rgb(75 166 191);
@@ -176,7 +180,6 @@ i{
 }
 .edit-in{
   color: white;
-  /* height: clamp(2.5rem, 3vw, 3rem); */
   width: 75%;
   font-family: var(--bodyFont);
   font-size: calc(10px + 2vmin);

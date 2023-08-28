@@ -21,7 +21,7 @@ const App = () => {
       <header className="App-header">
         <div>jotpile</div>
       </header>
-      <i>"Jot down a task, item, or note"</i>
+      <i>Jot down a task, item, or note</i>
       <InputForm />
       {todosData.length === 0?
         <div className="clear-btn-ph">No Jots currently 🤔</div>

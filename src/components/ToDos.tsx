@@ -1,5 +1,6 @@
 import React, { useContext, MouseEvent, useEffect } from "react";
 import { AppContext } from "../context/context";
+import { FiEdit, FiDelete } from "react-icons/fi";
 
 const ToDos : React.FunctionComponent = () => {
     const { todosData, setTodosData, trigger, setTrigger, setOnEdit, setEditID } = useContext(AppContext);
@@ -31,8 +32,8 @@ const ToDos : React.FunctionComponent = () => {
                         <div className="count">{i+1})</div>
                         <div className="todo-txt">{elem.item}</div>
                         <div className="options">
-                            <button id={`${i}`} className="edit-btn" onClick={handleEdit}>E</button>
-                            <button id={`${i}`} className="del-btn" onClick={handleDelete}>X</button>
+                            <button id={`${i}`} className="edit-btn" onClick={handleEdit}><FiEdit /></button>
+                            <button id={`${i}`} className="del-btn" onClick={handleDelete}><FiDelete /></button>
                         </div>
                     </div>
                 )
