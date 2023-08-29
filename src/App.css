@@ -53,10 +53,9 @@ input{
   color: white;
   font-weight: 600;
   font-size: calc(8px + 2vmin);
-  transition: background .1s ease-in-out, color .1s ease-in-out;
+  transition: background .1s ease-in-out;
 }
 #sub:hover{
-  color: white;
   background: rgb(75, 191, 125);
 }
 #in{
@@ -197,21 +196,21 @@ input{
   background: none;
 }
 .edit-sub{
+  background: #ffffff37;
   height: 2.5rem;
   cursor: pointer;
   border: none;
   border-radius: .5rem;
-  color: #42454c;
+  color: white;
   font-size: calc(8px + 2vmin);
-  transition: background .1s ease-in-out, color .1s ease-in-out;
+  transition: background .1s ease-in-out;
 }
 .edit-sub:hover{
-  color: white;
   background: rgb(75, 191, 125);
 }
 .exit-btn{
   border: none;
-  border-radius: 5rem;
+  border-radius: 10rem;
   height: 1rem;
   width: 1rem;
   background-color: #ff3e30;
