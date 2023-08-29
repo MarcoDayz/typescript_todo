@@ -40,7 +40,7 @@ const EditForm = () => {
                     <div className="exit-wrapper">
                         <input type="button" className="exit-btn" onClick={exitModule}/>
                     </div>
-                    <h1>Update Jot</h1>
+                    {/* <h1>Update Jot</h1> */}
                     <div className="edit-inp-wrapper">
                         <input name="edit-in" className="edit-in" type="text" value={jot} onChange={handleEditChange} autoComplete="off"/>
                         <input name="edit-sub" className="edit-sub" type="submit" value={"save"}/>

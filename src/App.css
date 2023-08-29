@@ -26,6 +26,11 @@ i{
   color: #4ca6bf;
   margin: 1rem;
 }
+input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 #fm{
   display: flex;
   flex-direction: row;
@@ -40,11 +45,12 @@ i{
 }
 
 #sub{
+  background: #ffffff37;
   height: 2.5rem;
   cursor: pointer;
   border: none;
   border-radius: .5rem;
-  color: #42454c;
+  color: white;
   font-weight: 600;
   font-size: calc(8px + 2vmin);
   transition: background .1s ease-in-out, color .1s ease-in-out;
@@ -54,6 +60,7 @@ i{
   background: rgb(75, 191, 125);
 }
 #in{
+  border-radius: 0;
   color: white;
   height: clamp(2.5rem, 5vw, 4rem);
   width: 100%;
@@ -176,6 +183,7 @@ i{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
   gap: 1rem;
 }
 .edit-in{
@@ -203,9 +211,9 @@ i{
 }
 .exit-btn{
   border: none;
-  border-radius: 100%;
-  height: 11px;
-  width: 10px;
+  border-radius: 5rem;
+  height: 1rem;
+  width: 1rem;
   background-color: #ff3e30;
   margin: 8px;
   cursor: pointer;
