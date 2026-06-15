@@ -23,6 +23,8 @@ const EditForm = () => {
         //add splice method replace the jot
         todosData.splice(editID, 1, {item: jot})
         setTodosData(todosData)
+        sessionStorage.setItem("todos",JSON.stringify(todosData))
+        console.log(todosData)
         exitModule()
     }
 

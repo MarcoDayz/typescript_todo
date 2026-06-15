@@ -1,3 +1,4 @@
+//@ts-ignore
 import './App.css';
 import InputForm from './components/InputForm';
 import ToDos from './components/ToDos';
