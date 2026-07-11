@@ -31,7 +31,7 @@ const EditForm = () => {
     const exitModule = () => {
         setOnEdit(false)
         setEditID(0)
-        setJot("")
+        //setJot("")
     }
 
     return (
@@ -39,13 +39,13 @@ const EditForm = () => {
         {onEdit?
             <div className="edit-main">
                 <form name="edit-fm" className="edit-fm" onSubmit={handleEditSubmit}>
-                    <div className="exit-wrapper">
-                        <input type="button" className="exit-btn" onClick={exitModule}/>
-                    </div>
                     {/* <h1>Update Jot</h1> */}
                     <div className="edit-inp-wrapper">
                         <input name="edit-in" className="edit-in" type="text" value={jot} onChange={handleEditChange} autoComplete="off"/>
+                    <div className="exit-wrapper">
                         <input name="edit-sub" className="edit-sub" type="submit" value={"save"}/>
+                        <input type="button" className="exit-btn" onClick={exitModule} value={"cancel"}/>
+                    </div>
                     </div>
                 </form>
             </div>
